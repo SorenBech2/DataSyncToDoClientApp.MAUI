@@ -12,7 +12,7 @@ public partial class AppDbContext(DbContextOptions<AppDbContext> options) : Offl
     {
         HttpClientOptions clientOptions = new()
         {
-            Endpoint = new Uri("https://app-nn4uurie34h7s.azurewebsites.net/"),
+            Endpoint = new Uri("https:///YOURSITEHERE.azurewebsites.net/"),
             HttpPipeline = new List<HttpMessageHandler> { new HttpClientHandler() }
         };
         _ = optionsBuilder.UseHttpClientOptions(clientOptions);
